@@ -1,7 +1,7 @@
 {
   "name": "json-to-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "server for json-to-ts project",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
