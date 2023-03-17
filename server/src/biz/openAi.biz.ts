@@ -11,6 +11,8 @@ export default class OpenAiBiz {
     try {
       const { value } = request.body;
 
+      console.log(value);
+
       const prompt = `Convert the JSON object into Typescript interfaces \n ${value} Please, I need the only the code, I don't need any explanations.`;
 
       const completion = await this.openAi.createChatCompletion({

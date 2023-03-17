@@ -9,7 +9,7 @@ export default class OpenAiController {
       const result = await this.openAiBizObj.convertJsonToTs(request);
       return response.status(200).send(result);
     } catch (err) {
-      console.error(err);
+      console.error((err as any).response?.data ?? (err as Error).message);
       return response.status(500).send({ error: "Error in API" });
     }
   };
